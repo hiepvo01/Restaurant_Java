@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+header {
+  color: White;
+  padding: 1px 0px 1px 50px;
+  background-color: rgb(75,75,75);
+  font-size: 13px;
+  margin: -9px -9px 0px -9px;
+}
+
+body {
+  background-color: rgb(230,230,230);
+}
+
+strong {
+	padding: 0px 100px 100px 0px;
+}
+
+.search {
+	padding: 50px 100px 0px 0px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Manager</h2>
+</header>
+<body>
+  <button id="refreshButton">Refresh Search</button>
+  <br><br>
+  <strong>Register new Manager</strong>
+  <br><br><br>
+
+  <br>
+  <div id="similar_name">
+    <input type="text" placeholder="search_similar" id="search_similar">
+    <button id="request_similar">Submit Full Name</button>
+  </div>
+  <br>
+
+  <form action="localhost:8025" method="GET">
+    <div>
+      <label for="id">Your ID?</label>
+      <input id="id">
+    </div>
+    <div>
+      <label for="name">Your Name?</label>
+      <input id="name">
+    </div>
+    <div>
+      <label for="dob">Your date of birth?</label>
+      <input id="dob">
+    </div>
+    <div>
+      <label for="position">Position?</label>
+      <input id="position">
+    </div>
+    <div>
+      <label for="balance">Balance?</label>
+      <input id="balance">
+    </div>
+    <div>
+      <label for="clockin">Clock In time?</label>
+      <input id="clockin">
+    </div>
+    <div>
+      <label for="clockout">Clock Out time?</label>
+      <input id="clockout">
+    </div>
+    <div>
+      <button id="form">Send my info</button>
+    </div>
+  </form>
+  <hr>
+  <form action="localhost:8025" method="GET">
+    <div>
+      <button id="order">Check Storage</button>
+    </div>
+  </form>
+  <hr>
+  <form action="localhost:8025" method="GET">
+    <div>
+      <button id="pay">Check Emp Data</button>
+    </div>
+  </form>
+
+  <script src="js/manager.js"></script>
+</body>
+</html>

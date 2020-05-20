@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+header {
+  color: White;
+  padding: 1px 0px 1px 50px;
+  background-color: rgb(75,75,75);
+  font-size: 13px;
+  margin: -9px -9px 0px -9px;
+}
+
+body {
+  background-color: rgb(230,230,230);
+}
+
+strong {
+	padding: 0px 100px 100px 0px;
+}
+
+.search {
+	padding: 50px 100px 0px 0px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Customer register and food order</h2>
+</header>
+<body>
+  <button id="refreshButton">Refresh Search</button>
+  <br><br>
+  <strong>Register new customer</strong>
+  <br><br><br>
+
+  <br>
+  <div id="similar_name">
+    <input type="text" placeholder="search_similar" id="search_similar">
+    <button id="request_similar">Submit Full Name</button>
+  </div>
+  <br>
+
+  <form action="localhost:8025" method="GET">
+    <div>
+      <label for="id">Your ID?</label>
+      <input id="id">
+    </div>
+    <div>
+      <label for="name">Your Name?</label>
+      <input id="name">
+    </div>
+    <div>
+      <label for="dob">Your date of birth?</label>
+      <input id="dob">
+    </div>
+    <div>
+      <label for="guest">Number of guests?</label>
+      <input id="guest">
+    </div>
+    <div>
+      <button id="form">Send my info</button>
+    </div>
+  </form>
+  <hr>
+  <form action="localhost:8025" method="GET">
+    <div>
+      <label for="food">Food order</label>
+      <input id="food">
+    </div>
+    <div>
+      <label for="dish">How many orders?</label>
+      <input id="dish">
+    </div>
+    <div>
+      <button id="order">Order food</button>
+    </div>
+  </form>
+  <hr>
+  <form action="localhost:8025" method="GET">
+    <div>
+      <label for="point">Number of Membership points?</label>
+      <input id="point">
+    </div>
+    <div>
+      <label for="tip">Tip? (percentage)</label>
+      <input id="tip">
+    </div>
+    <div>
+      <button id="pay">Click to pay</button>
+    </div>
+  </form>
+
+  <script src="js/customer.js"></script>
+</body>
+</html>

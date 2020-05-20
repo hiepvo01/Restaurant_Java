@@ -1,0 +1,325 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  font-family: 'Vollkorn', serif; 
+  height:100%;
+  background-image: url("../images/sky.jpg");
+}
+
+body {
+  color: black;
+}
+
+header {
+  background: darkblue;
+  width: 1020px;
+  margin: 0 auto;
+    
+}
+
+main {
+  opacity:0.7;
+  background: #ffff66;
+  width: 1020px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+input{
+  margin-top: 5px;
+}
+
+img{
+  margin-top: 20px;
+}
+
+p{
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+span {
+  display: block;
+}
+
+footer {
+  background: orange;
+  width: 1020px;
+  margin: 0 auto;
+  height: 65px;
+  margin-top: 20px;
+  padding: 20px 0px 0px 5px;
+}
+
+footer p{
+  margin-top: 17px;
+  margin-left: 5px;
+  color: gray;
+  text-decoration: aqua;
+  font-style: italic;
+}
+
+blockquote, q {
+  quotes: none;
+  border: pink;
+  background-color: pink;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul, ol, li{
+  font-family: 'Crimson Text', serif;
+	border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header h1 {
+  color: #ffff66;
+  font-size: 38pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+main h2 {
+  padding: 5px;
+}
+
+figure{
+  margin-bottom: 20px;
+}
+
+.articles{
+  width: 800px;
+  height: 100%;
+  padding: 5px;
+  border: 4px solid purple;
+  margin-bottom: 25px!important;
+  margin: 0 auto;
+  border-radius: 25px;
+  background: orange;
+  color: black;
+  font-family: monospace;
+  text-align: center;
+}
+
+.articles img{
+  padding-right:15px;
+  padding-bottom:15px;
+}
+
+.articles time{
+  display: block;
+}
+
+.articles h1{
+  color: red;
+  font-size: 15pt;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+div {
+  width: 800px;
+  margin:0 auto;
+}
+
+div figure{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.readmore:active, a.readmore:visited, a.readmore:link{
+  color:red;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: lightblue;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+a.readmore:hover {
+  background:blue;
+}
+ 
+a.button {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+a.button:active, a.button:visited, a.button:link{
+  text-decoration: none;
+}
+
+a.button:hover {
+  background:blue;
+}
+
+#contact {
+  width: 800px;
+  margin:0 auto;
+  margin-bottom: 25px;
+}
+
+#contact form fieldset{
+  background-color: wheat
+}
+
+#contact p{
+  margin-bottom:0px;
+  margin-top: 10px;
+}
+
+#contact-submit {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #839ac4 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:12px;
+	text-shadow:0px 1px 0px #283966;
+}
+#contact-submit:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+#contact-submit:active {
+	position:relative;
+	top:1px;
+}
+
+#about{
+  width: 800px;
+  margin:0 auto;
+  margin-bottom: 25px;
+}
+
+#about figure{
+  margin:0 auto;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid purple;
+  border-radius: 20px;
+}
+
+#about figure img{
+  margin-top: 12px;
+}
+
+.menu li{
+  display: inline;
+  background: wheat;
+  padding:5px;
+  border:2px solid grey;
+  border-radius: 10px;
+}
+
+.menu a:active, .menu a:visited, .menu a:link{
+  color:black;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.menu a:hover{
+  color:orange;
+}
+
+ul.menu{
+  text-align: center;
+}
+
+
+h1 {
+  padding-top: 15px;
+	font-size: 35px;
+  font-weight: bold;
+  font-family: 'Crimson Text', serif;
+}
+
+h2 {
+  opacity: 1.0;
+  font-size: 30px;
+  color: #005b96;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  color: orangered;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+font-size: 20px;
+  font-weight: bold;
+  color: orangered;
+  font-family: 'Playfair Display', serif;
+}
+
+h5 {
+  font-size: 19px;
+  font-weight: bold;
+  color: orangered;
+  font-family: 'Playfair Display', serif;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: orangered;
+  font-family: 'Playfair Display', serif;
+}
+
+#style-guide{
+  width: 800px;
+  margin:0 auto;
+}
+
